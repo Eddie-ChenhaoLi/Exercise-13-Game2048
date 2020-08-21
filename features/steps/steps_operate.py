@@ -18,4 +18,5 @@ def step_impl(context, cmd):
 
 @Then('the series should be changed to {new}')
 def step_impl(context, new):
-    #TODO
+    list = context.game.operate(context.cmd)
+    assert list == json.loads(new)
