@@ -73,15 +73,7 @@ class Game():
         self.change()
 
     def operate(self, cmd):
-        if cmd == 'a':
-            self.left()
-        elif cmd == 'd':
-            self.right()
-        elif cmd == 'w':
-            self.up()
-        elif cmd == 's':
-            self.down()
-        return self.list
+        #TODO
 
     def start(self):
         self.update()
